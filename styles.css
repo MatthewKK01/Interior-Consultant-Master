@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+}
+
+body{
+    background-color:#181719;
+    min-height: 100vh;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 50px ;
+}
+.material-symbols-outlined{
+    display: none !important;
+}
+h3{
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    margin-left: 77px;
+    /* Font */
+    text-transform: uppercase;
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+}
+ul li {
+    display: inline;
+    padding-right: 86px;
+}
+a{
+    color:#FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.home{
+    text-decoration: underline;   
+    text-underline-offset: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* Section */
+.main-container{
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 87px;
+    align-items: center;
+    height:738px;
+}
+.image{
+    position: relative;
+    top: 28px;
+}
+.info h1{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+    margin-bottom: 40px;
+}
+
+.info p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 46px;
+}
+.info a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.interior{
+    width: 800px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 30px;
+}
+.made_by{
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 24px;
+    width: 410px;
+    position: relative;
+    bottom: 96px;
+    left: 345px;
+}
+.maker {
+    width: 72px;
+    border-radius: 50%;
+    display: inline;
+}
+.name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+.job{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+h2{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+footer{
+    color: #A9A9A9;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+}
+footer a{
+    font-size: 13px;
+    font-weight: bold;
+    color: #A9A9A9;
+}
+footer p {
+    padding: 20px;
+}
+
+@media screen and (max-width:1300px){
+    .main-container{
+        margin: 0;
+        margin-top: 38px;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding-inline: 30px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:850px){
+    header h3{
+        margin-left:12px;
+    }
+    .interior{
+        width: 391.06px;
+        height: auto;
+        padding-inline: 20px;
+    }
+    .made_by{
+        width: 300px;
+        position: relative;
+        left: 55px;
+    }
+    .made_by > *{
+        width: 100%;
+    }
+    .main-container{
+        margin: 0;
+        padding-inline: 30px;
+        justify-content: center;
+    }
+    .main-container h1{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .main-container p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .main-container a{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    header{
+        margin-bottom: 38px;
+    }
+    header nav ul{
+        display: none;
+    }
+    .material-symbols-outlined{
+        font-size: 33px !important;
+        display: block !important;
+        margin-right: 12px;
+        cursor: pointer;
+    }
+    .contact{
+        margin-bottom: 18px;
+    }
+    .contact h3{
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .contact .text{
+        width: 100%;
+    }
+    .maker{
+        width: 36px;
+    }
+}
